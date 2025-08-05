@@ -1,5 +1,6 @@
 package model;
 
+import com.opencsv.bean.CsvDate;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,31 +13,21 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Getter
 @Setter
+@NoArgsConstructor
 public class Pedido {
     private Long id;
     private String numeroPedido;
     private String codigoRastreio;
     private StatusPedido statusAtual;
+    @CsvDate("yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSS")
     private LocalDateTime dataCompra;
+    @CsvDate("yyyy-MM-dd")
     private LocalDate previsaoEntrega;
+    @CsvDate("yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSS")
     private LocalDateTime dataEntrega;
     private BigDecimal valorTotal;
     private Boolean pagamentoConfirmado;
     private Long clienteId;
-
-    public Pedido() {}
-
-    public Pedido(Long id, String numeroPedido, String codigoRastreio, StatusPedido statusAtual, LocalDateTime dataCompra, LocalDate previsaoEntrega, BigDecimal valorTotal, Boolean pagamentoConfirmado, Long clienteId) {
-        this.id = id;
-        this.numeroPedido = numeroPedido;
-        this.codigoRastreio = codigoRastreio;
-        this.statusAtual = statusAtual;
-        this.dataCompra = dataCompra;
-        this.previsaoEntrega = previsaoEntrega;
-        this.valorTotal = valorTotal;
-        this.pagamentoConfirmado = pagamentoConfirmado;
-        this.clienteId = clienteId;
-    }
 
     @Override
     public String toString() {

@@ -1,5 +1,6 @@
 package model;
 
+import com.opencsv.bean.CsvDate;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -14,6 +15,7 @@ public class Cliente extends Usuario {
     private String email;
     private String telefone;
     private String endereco;
+    @CsvDate("yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSS")
     private LocalDateTime dataRegistro;
     private Boolean ativo;
 

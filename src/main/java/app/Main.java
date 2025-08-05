@@ -31,8 +31,8 @@ public class Main {
         System.out.println("\n===================================\n");
 
         List<Pedido> pedidosParaEscrever = Arrays.asList(
-                new Pedido(101L, "PED-001", "BR123456789", StatusPedido.ENTREGUE, LocalDateTime.now().minusDays(5), LocalDate.now().minusDays(2), new BigDecimal("199.90"), true, 1L),
-                new Pedido(102L, "PED-002", "BR987654321", StatusPedido.EM_TRANSITO, LocalDateTime.now().minusDays(2), LocalDate.now().plusDays(3), new BigDecimal("49.50"), true, 2L)
+                new Pedido(101L, "PED-001", "BR123456789", StatusPedido.ENTREGUE, LocalDateTime.now().minusDays(5), LocalDate.now().minusDays(2), LocalDateTime.now().minusDays(1), new BigDecimal("199.90"), true, 1L),
+                new Pedido(102L, "PED-002", "BR987654321", StatusPedido.EM_TRANSITO, LocalDateTime.now().minusDays(2), LocalDate.now().plusDays(3), null, new BigDecimal("49.50"), true, 2L)
         );
 
 

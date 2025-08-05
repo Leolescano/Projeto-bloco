@@ -39,6 +39,9 @@ public class CsvService {
         } catch (IOException e) {
             System.err.println("Erro ao ler arquivo CSV: " + e.getMessage());
             return Collections.emptyList();
+        } catch (Exception e) {
+            System.err.println("Erro ao processar os dados do CSV em: " + filePath + ". Causa: " + e.getMessage());
+            return Collections.emptyList();
         }
     }
 }

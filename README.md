@@ -1,6 +1,6 @@
-# Projeto de Bloco - Sistema de Gestão de Clientes e Pedidos
-
-Este é um projeto de exemplo desenvolvido como parte do "Projeto de Bloco". A aplicação demonstra a criação, manipulação e persistência de entidades de negócio (Clientes e Pedidos) utilizando arquivos CSV como meio de armazenamento. O objetivo é aplicar conceitos de Orientação a Objetos, manipulação de arquivos e uso de bibliotecas externas em Java.
+# Projeto de Bloco - Sistema de Gestão de Pedidos
+## Aluno: Leonardo Lescano
+Este é um projeto de exemplo desenvolvido como parte da "Disciplina Projeto de Bloco". A aplicação demonstra a criação, manipulação e persistência de entidades de negócio (Clientes e Pedidos) utilizando uma base de dados Postgres. O objetivo é aplicar conceitos de Orientação a Objetos, manipulação de arquivos e uso de bibliotecas externas em Java.
 
 ## ✨ Funcionalidades Principais
 
